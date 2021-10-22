@@ -12,6 +12,7 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	color: black;
 }
 
 .navbar-vertical.navbar-expand-lg .navbar-nav .nav .nav-link {
@@ -23,4 +24,104 @@
 }
 .navPagesSub .nav-item .nav-link {
 	padding-left: 3.25rem !important;
+}
+
+.nav-link {
+	font-weight: bold;
+	color: black;
+}
+.highlight {
+	background: #7ab1f0;
+	border-radius: 25px;
+	color: white;
+}
+
+li {
+	padding: 0 20px;
+}
+
+/* hero */
+
+.hero {
+	text-align: center;
+	overflow-x: hidden;
+}
+
+@media (min-width: 697px) {
+	.hero {
+		min-height: 35rem; /* 560px */
+		text-align: left;
+	}
+	.hero .container {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.hero__image {
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem;
+}
+
+@media (min-width: 697px) {
+	.hero__image {
+		background-image: none;
+		flex: 1;
+		order: 2;
+		min-height: 35rem;
+	}
+}
+
+.hero__image::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	margin-top: 1rem;
+	background-image: url("https://static.vecteezy.com/system/resources/previews/001/879/420/non_2x/illustration-of-e-learning-makes-it-easy-for-student-to-learn-distance-learning-with-laptop-and-internet-online-home-work-courses-and-study-for-open-knowledge-stationery-and-stack-of-book-free-vector.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+
+.logo {
+	height: 2.5rem;
+	width: 7rem;
+}
+@media (min-width: 1024px) {
+	.hero__image::before {
+		display: block;
+		width: 132%;
+	}
+}
+
+.hero__text h1 {
+	font-size: 2.1875rem; /* 35px */
+	line-height: 1.4;
+	color: var(--clr-neutral-VeryDarkBlue);
+	margin-bottom: 1.5rem; /* 24px */
+}
+
+.hero__text p {
+	line-height: 1.5;
+	margin-bottom: 1.5rem; /* 24px */
+	color: var(--clr-neutral-GrayishBlue);
+}
+
+@media (min-width: 1024px) {
+	.hero__text {
+		flex: 1;
+		order: 1;
+	}
+
+	.hero__text h1 {
+		font-size: 3.1875rem; /* 51px */
+	}
+}
+
+.btns {
+	padding: 10px 20px;
+	background-color: #7ab1f0;
+	border: 0px;
+	border-radius: 20px;
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../style/styles.css";
 const Navbar = (props) => {
 	return (
-		<nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
+		<nav class="navbar  bg-light navbar-expand-lg fixed-top">
 			<a href="#" class="navbar-brand">
 				Coacher
 			</a>
@@ -23,12 +23,12 @@ const Navbar = (props) => {
 					</li>
 					<li class="navbar-item">
 						<Link to="/contact" class="nav-link">
-							Contact
+							Profile
 						</Link>
 					</li>
 					<li class="navbar-item">
 						<Link to="/feedback" class="nav-link">
-							Feedback
+							Subjects
 						</Link>
 					</li>
 					<li class="navbar-item" className="highlight">
