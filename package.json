@@ -1,0 +1,22 @@
+{
+  "name": "mernproject-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sauravshetty473/MernProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sauravshetty473/MernProject/issues"
+  },
+  "homepage": "https://github.com/sauravshetty473/MernProject#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
