@@ -8,7 +8,6 @@ function App() {
 		<div>
 			<Router>
 				<Header />
-				<Test />
 			</Router>
 		</div>
 	);
