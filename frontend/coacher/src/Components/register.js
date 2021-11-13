@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../style/styles.css";
 import "../style/register.css";
 
-const Login = (props) => {
+const Register = (props) => {
     return (
         <div className="Signup">
             <form action=" " method="post" >
@@ -86,4 +86,4 @@ const Login = (props) => {
     );
 }
 
-export default Login;
+export default Register;
