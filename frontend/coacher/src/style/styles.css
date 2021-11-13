@@ -339,3 +339,24 @@ li {
 	font-family: "ff-tisa-sans-web-pro", Trebuchet MS, Lucida Grande,
 		Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
 }
+
+#quiz .card {
+	margin-top: 1.25em;
+}
+.card {
+	background: lightblue;
+}
+.card-title {
+	color: #000;
+	text-align: center;
+	font-weight: 700;
+}
+.list-group {
+	padding-bottom: 1em;
+}
+.btn-secondary {
+	margin-right: 1em;
+	border: 2px solid #003b5fbe;
+	background: black;
+	color: white;
+}
