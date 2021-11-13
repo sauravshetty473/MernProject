@@ -6,11 +6,6 @@ import { Link } from "react-router-dom";
 class Header extends Component {
 	state = {};
 
-	// onClick = () => {
-
-	// 		return  <Redirect  to="Leaderboard.js" />
-
-	//  }
 	render() {
 		return (
 			<div>
