@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/navbar";
 import Header from "./Components/hero";
 import "./App.css";
-import TestCard from "./Components/testcards";
+import Quiz from "./Components/quiz";
 function App() {
 	return (
 		<div>
 			<Router>
-				<Header />
+				<Quiz />
 			</Router>
 		</div>
 	);
