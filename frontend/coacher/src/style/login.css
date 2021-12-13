@@ -1,10 +1,6 @@
 body {
-    background: #19aa8d;
+    background: white;
     font-family: 'Montserrat', sans-serif;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1558403194-611308249627?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGpvYiUyMGludGVydmlld3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-    background-position: center;
   }
   .form-control {
       font-size: 15px;
@@ -17,7 +13,7 @@ body {
       border-radius: 3px;
   }
   .Login {
-      width: 750px;
+      width: 650px;
       margin: 0 auto;
       padding: 30px 0;
   }
@@ -52,14 +48,14 @@ body {
       font-size: 15px;
       font-family: 'Montserrat', sans-serif;
   }
-  .Login .form-control {
+   .Login .form-control {
       min-height: 38px;
       box-shadow: none !important;
-  }
-  .Login .input-group-addon {
+  } 
+   .Login .input-group-addon {
       max-width: 42px;
       text-align: center;
-  }
+  } 
   .Login .btn, .Login .btn:active {
       font-size: 20px;
       font-weight: bold;
