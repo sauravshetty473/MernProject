@@ -8,12 +8,14 @@ import QuizApp from "./Components/quiz-App";
 import HomeCards from "./Components/homecards";
 import Register from "./Components/register";
 import Test from "./Components/test";
+import Footer from "./Components/footer";
 function App() {
 	return (
 		<Router>
 			<Header />
 			<HomeCards />
 			<Test />
+			<Footer />
 		</Router>
 	);
 }
