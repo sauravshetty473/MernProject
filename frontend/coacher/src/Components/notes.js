@@ -1,17 +1,46 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import Navbar from "./navbar";
-import "../style/style.css";
+import "../style/styles.css"
 import "../style/notes.css";
 
 class Notes extends React.Component {
     render() {
         return (
             <div>
+                <br/><br/>
+            <section className="notes">
+            <div class="section-title">
+                <h3>Refer <span style={{color: "#0d58ba"}}>Notes</span> </h3>
+            </div>
             <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
             <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
             <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
             and consider adding captions or animations for audiences watching without sound.</p>
+            
+            <br/><br/>
+            <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
+            <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
+            <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
+            and consider adding captions or animations for audiences watching without sound.</p>
+            
+            <br/><br/>
+            <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
+            <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
+            <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
+            and consider adding captions or animations for audiences watching without sound.</p>
+            
+            <br/><br/>
+            <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
+            <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
+            <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
+            and consider adding captions or animations for audiences watching without sound.</p>
+            </section>
+
+            <section className="lec">
+            <div class="section-title">
+                <h3>Refer <span style={{color: "#0d58ba"}}>Tutorials</span> </h3>
+            </div>
             <div class="ContentBlocks__component">                                                 
                 <div class="MediaSoloBlock MediaSoloBlock--wide">           
                     <div class="Media Media--rounded" id="media-youtube-Q-a2FR1iwqg">                                                       
@@ -23,11 +52,6 @@ class Notes extends React.Component {
                     </div> 
                 </div>                           
             </div>
-            <br/>
-            <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
-            <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
-            <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
-            and consider adding captions or animations for audiences watching without sound.</p>
             <div class="ContentBlocks__component">                                                 
                 <div class="MediaSoloBlock MediaSoloBlock--wide">           
                     <div class="Media Media--rounded" id="media-youtube-Q-a2FR1iwqg">                                                       
@@ -39,11 +63,6 @@ class Notes extends React.Component {
                     </div> 
                 </div>                           
             </div>
-            <br/>
-            <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
-            <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
-            <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
-            and consider adding captions or animations for audiences watching without sound.</p>
             <div class="ContentBlocks__component">                                                 
                 <div class="MediaSoloBlock MediaSoloBlock--wide">           
                     <div class="Media Media--rounded" id="media-youtube-Q-a2FR1iwqg">                                                       
@@ -55,11 +74,6 @@ class Notes extends React.Component {
                     </div> 
                 </div>                           
             </div>
-            <br/>
-            <p>Wondering where to start? Here are some tips and templates from Biteable to get you going on your first how-to video.</p>
-            <h2 id="loc-what-makes-a-good-how-to-video">What makes a good how-to video?</h2>
-            <p>Once you have your topic, you need to hit the perfect balance between engaging and informative. The best videos strike a middle ground between visually interesting content and a topic that can be broken down into bite-sized pieces for your audience. Keep your video to-the-point, use an engaging title, 
-            and consider adding captions or animations for audiences watching without sound.</p>
             <div class="ContentBlocks__component">                                                 
                 <div class="MediaSoloBlock MediaSoloBlock--wide">           
                     <div class="Media Media--rounded" id="media-youtube-Q-a2FR1iwqg">                                                       
@@ -71,6 +85,8 @@ class Notes extends React.Component {
                     </div> 
                 </div>                           
             </div>
+            </section>
+            
             </div>
         );
     }
