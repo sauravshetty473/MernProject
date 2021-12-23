@@ -9,7 +9,7 @@ function App() {
 	return (
 		<div>
 			<Router>
-				<Header />
+				<QuizApp />
 			</Router>
 		</div>
 	);
