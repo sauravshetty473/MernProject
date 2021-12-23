@@ -4,12 +4,11 @@ class Test extends Component {
 	render() {
 		return (
 			<div class="centered">
+				<h1 className="middle">RECENT TESTS</h1>
 				<ul class="dash-list">
-					<li id="dash-item--1" class="dash-item dash-item--published bgtest">
+					<li id="dash-item--1" class="dash-item dash-item--published">
 						<div class="dash-item__header">
-							<h3 class="dash-item__title">
-								<a href="#">Semantic HTML Quiz</a>
-							</h3>
+							<h3 class="dash-item__title">Physics Quiz</h3>
 
 							<ul id="dash-item__nav--1" class="dash-item__nav"></ul>
 						</div>
@@ -41,9 +40,7 @@ class Test extends Component {
 					</li>
 					<li id="dash-item--1" class="dash-item dash-item--published">
 						<div class="dash-item__header">
-							<h3 class="dash-item__title">
-								<a href="#">Semantic HTML Quiz</a>
-							</h3>
+							<h3 class="dash-item__title">Organic Chemistry Quiz</h3>
 
 							<ul id="dash-item__nav--1" class="dash-item__nav"></ul>
 						</div>
@@ -75,9 +72,7 @@ class Test extends Component {
 					</li>
 					<li id="dash-item--1" class="dash-item dash-item--published">
 						<div class="dash-item__header">
-							<h3 class="dash-item__title">
-								<a href="#">Semantic HTML Quiz</a>
-							</h3>
+							<h3 class="dash-item__title">Algebra Quiz</h3>
 
 							<ul id="dash-item__nav--1" class="dash-item__nav"></ul>
 						</div>

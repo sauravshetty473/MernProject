@@ -1,3 +1,9 @@
+body {
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .navbar-vertical.navbar-expand-lg {
 	display: block;
 	position: fixed;
@@ -78,8 +84,8 @@ li {
 	background-image: url("https://static.vecteezy.com/system/resources/previews/001/879/420/non_2x/illustration-of-e-learning-makes-it-easy-for-student-to-learn-distance-learning-with-laptop-and-internet-online-home-work-courses-and-study-for-open-knowledge-stationery-and-stack-of-book-free-vector.jpg");
 }
 .heroimgleft {
-	width: 100%;
-	height: 100%;
+	width: 110%;
+	height: 110%;
 }
 .logo {
 	height: 2.5rem;
@@ -136,7 +142,7 @@ li {
 	align-content: flex-end;
 	justify-content: flex-end;
 	padding: 1.2rem 1.4rem 1rem;
-	background: #fff;
+	background: rgb(156, 199, 219);
 	list-style: none;
 	transition: all 0.5s;
 	margin: 0 0 0.8rem;
@@ -166,16 +172,16 @@ li {
 	}
 }
 .dash-item--published {
-	box-shadow: inset 4px 0 0 #3bb275, 0 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: inset 4px 0 0 #000000, 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .dash-item--draft {
-	box-shadow: inset 4px 0 0 #92dbb6, 0 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: inset 4px 0 0 #000000, 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .dash-item__header {
 	position: relative;
 	z-index: 99;
-	background: #fff;
-	border-bottom: 1px solid #ddd;
+	background: rgb(0, 0, 0);
+	color: white;
 }
 .dash-item__title {
 	font-size: 1rem;
@@ -191,7 +197,7 @@ li {
 	font-size: 0.7rem;
 	font-weight: 300;
 	text-transform: uppercase;
-	color: #888;
+	color: rgb(255, 255, 255);
 	position: absolute;
 }
 .dash-item__nav {
@@ -228,7 +234,7 @@ li {
 .dash-item__menu-action {
 	background: none;
 	border: none;
-	color: #444;
+	color: rgb(0, 0, 0);
 	padding: 0;
 	position: absolute;
 	bottom: 0;
@@ -238,7 +244,7 @@ li {
 .dash-item__menu-action__icon {
 	width: 24px;
 	height: 24px;
-	fill: #444;
+	fill: rgb(0, 0, 0);
 	transition: all 0.3s cubic-bezier(0, 0, 0.3, 1);
 }
 .dash-item__menu-action__icon--bottom {
@@ -253,7 +259,7 @@ li {
 }
 .dash-list--focus-one .dash-item--menu-active {
 	transform: translate3d(0, -3px, 0);
-	box-shadow: inset 4px 0 0 #3bb275, 0 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 4px 0 0 #000000, 0 2px 2px rgba(0, 0, 0, 0.2);
 	opacity: 1;
 }
 .dash-item--menu-active .dash-item__menu-action__icon--bottom {
@@ -482,10 +488,6 @@ label.radio input {
 	margin-right: 10px;
 }
 
-.container {
-	max-width: 1280px;
-	margin: 0 auto;
-}
 .container .page-wrapper {
 	font-family: "Roboto Condensed", sans-serif;
 }
@@ -521,13 +523,14 @@ label.radio input {
 	right: 0;
 	display: block;
 	content: "";
-	background: #00aeef;
+	background: #004964;
 	transition: width 0.35s;
 }
 .container .page-wrapper .box .box-item-content .category {
 	font-size: 16px;
-	color: #00aeef;
+	color: #004964;
 	text-align: left;
+	font-weight: bold;
 	font-weight: 500;
 	display: inline-block;
 	margin-bottom: 15px;
@@ -552,7 +555,7 @@ label.radio input {
 	text-align: center;
 	font-weight: 700;
 	display: inline-block;
-	background-color: #00aeef;
+	background-color: #004964;
 	border-radius: 25px;
 }
 @media all and (max-width: 1100px) {

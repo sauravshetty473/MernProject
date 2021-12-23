@@ -33,7 +33,7 @@ const Navbar = (props) => {
 					</li>
 					<li class="navbar-item" className="highlight">
 						<Link to="/login" class="nav-link">
-							Login
+							Logout
 						</Link>
 					</li>
 				</ul>

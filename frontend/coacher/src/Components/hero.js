@@ -38,8 +38,7 @@ class Header extends Component {
 							<div class="col-md-6">
 								<img
 									className="heroimgleft"
-									src="
-									https://static.vecteezy.com/system/resources/previews/001/879/420/non_2x/illustration-of-e-learning-makes-it-easy-for-student-to-learn-distance-learning-with-laptop-and-internet-online-home-work-courses-and-study-for-open-knowledge-stationery-and-stack-of-book-free-vector.jpg"
+									src="https://cdni.iconscout.com/illustration/premium/thumb/business-training-concept-2974909-2477425.png"
 								/>
 							</div>
 						</div>

@@ -15,7 +15,7 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<a className="btn">Details</a>
 						</div>
 					</li>
 					<li class="box-item">
@@ -44,6 +44,28 @@ const HomeCards = (props) => {
 						<div class="box-item-content">
 							<span class="category">JEE PREP</span>
 							<h6 class="header">Physics</h6>
+							<p class="info-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
+								cum ea esse id, ipsa minima nulla unde.
+							</p>
+							<a class="btn">Details</a>
+						</div>
+					</li>
+					<li class="box-item">
+						<div class="box-item-content">
+							<span class="category">CET PREP</span>
+							<h6 class="header">Algebra</h6>
+							<p class="info-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
+								cum ea esse id, ipsa minima nulla unde.
+							</p>
+							<a class="btn">Details</a>
+						</div>
+					</li>
+					<li class="box-item">
+						<div class="box-item-content">
+							<span class="category">BITS PREP</span>
+							<h6 class="header">Chemistry</h6>
 							<p class="info-text">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
