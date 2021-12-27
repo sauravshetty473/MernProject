@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../style/styles.css";
 import "../style/login.css";
-import $ from 'jquery';
+// import $ from 'jquery';
 
 class Login extends React.Component {
     render () {

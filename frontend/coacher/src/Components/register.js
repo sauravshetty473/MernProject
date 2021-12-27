@@ -74,6 +74,26 @@ class Register extends React.Component{
                         </div>
                     </div>
                     <div className="form-group">
+                        <div className="input-group">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text">
+                                    <i className="fa fa-camera"></i>
+                                </span>
+                            </div>
+                            <input type="file" className="form-control" name="image" placeholder="Your profile pic" accept=".jpeg,.png,.jfif,.jpg" required="required" />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text">
+                                    <i className="fa fa-pencil"></i>
+                                </span>
+                            </div>
+                            <input type="text" className="form-control" name="bio" placeholder="Give yourself a bio" required="required" />
+                        </div>
+                    </div>
+                    <div className="form-group">
                         <select id="select" className="form-control" aria-placeholder="Type of User" required="required">
                             <option>Student</option>
                             <option>Faculty</option>
@@ -82,10 +102,10 @@ class Register extends React.Component{
                     <br />
                     <div className="form-group text-center">
                         <label className="form-check-label" />
-                        <input type="checkbox" required="required" id="myCheckbox" /> I accept the <Link to="/terms">Terms of Use</Link> &amp; <Link to="/privacy">Privacy Policy</Link>
+                        <input type="checkbox" required="required" id="myCheckbox" /> I accept the <Link to="/tnc">Terms of Use</Link> &amp; <Link to="/privacy">Privacy Policy</Link>
                     </div>
                     <div className="form-group text-center">
-                        <button type="submit" className="btn btn-primary btn-lg" id="myButton" disabled>Register</button>
+                        <button type="submit" className="btn btn-primary btn-lg" id="myButton">Register</button>
                         {/* <script type="text/javascript">
                             $('#myCheckbox').click(function() {
                                 $('#myButton').attr("disabled", !this.checked)

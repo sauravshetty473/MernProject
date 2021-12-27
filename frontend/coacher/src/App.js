@@ -20,12 +20,16 @@ import Privacy from "./Components/privacy";
 import TnC from "./Components/TnC";
 import End from "./Components/End";
 import Faq from "./Components/faq";
+import Profile from "./Components/profile";
+import Teacher_Profile from "./Components/teacher_profile";
+import All_Tests from "./Components/all_tests";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Navbar />} />
+				{/* <Route path="/" element={<Footer />} /> */}
 				{/* <Route path="/" element={<HomeCards />} />
 				<Route path="/" element={<Test />} /> */}
 				<Route path="quizapp" element={<QuizApp />} />
@@ -38,6 +42,10 @@ function App() {
 				<Route path="login" element={<Login/>} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="about" element={<About />} />
+				<Route path="privacy" element={<Privacy/>} />
+				<Route path="profile" element={<Profile/>} />
+				<Route path="profile1" element={<Teacher_Profile/>} />
+				<Route path="tests" element={<All_Tests/>} />
 			</Routes>
     </BrowserRouter>
 	);
