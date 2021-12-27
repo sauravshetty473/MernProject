@@ -2,14 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../style/styles.css";
 import "../style/login.css";
-<<<<<<< HEAD
-import $ from 'jquery';
-import USER from "./UserLogin";
+
 import axios from 'axios';
-import "./GlobalVariable";
-=======
-// import $ from 'jquery';
->>>>>>> 46abbf53a618a7f86a159193d568df2a9aae956f
 
 class Login extends React.Component {
 

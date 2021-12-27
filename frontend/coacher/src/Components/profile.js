@@ -2,8 +2,40 @@ import React from "react"
 import { Link } from "react-router-dom"
 import Navbar from "./navbar";
 import "../style/styles.css";
+import axios from 'axios';
 
 class Profile extends React.Component {
+
+    constructor(props) {
+		super(props);
+
+        const user = {
+            username: localStorage.username,
+          }
+          this.state = {user: [{
+              "first":'User',
+              "last" : 'last'
+          }]};
+        
+    
+    
+        axios.post('http://localhost:5000/users/', user)
+        .then(response => {
+          if (response.data.length > 0) {
+         
+            this.setState({ user: response.data })
+          }
+
+          console.log(this.state.user[0].first)
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+  
+	  }
+	
+
+
     render() {
         return (
             <div>
@@ -14,7 +46,9 @@ class Profile extends React.Component {
                         </div>
 
                         <h1 className="container text-center text-white">
-                        Saurav Shetty
+                        {
+                            this.state.user[0].first + ' ' +this.state.user[0].last
+                        }
                         </h1>
 
                         <div className="container text-center text-white">
