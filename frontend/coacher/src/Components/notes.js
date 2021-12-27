@@ -3,8 +3,28 @@ import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import "../style/styles.css";
 import "../style/notes.css";
+import axios from 'axios';
 
 class Notes extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {notes: []};
+	  }
+	
+
+	componentDidMount() {
+		axios.get('http://localhost:5000/notes/')
+		  .then(response => {
+			console.log(response.data);
+			this.setState({ notes: response.data })
+		  })
+		  .catch((error) => {
+			console.log(error);
+		  })
+	  }
+
+
 	render() {
 		return (
 			<div>
@@ -22,45 +42,11 @@ class Notes extends React.Component {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td data-label="first-name">Organic Chemistry</td>
-								<td data-label="last-name">Acids</td>
-								<td data-label="email">
-									{" "}
-									<a
-										href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-										download
-									>
-										Click to download
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td data-label="first-name">Calculus</td>
-								<td data-label="last-name">Integration</td>
-								<td data-label="email">
-									{" "}
-									<a
-										href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-										download
-									>
-										Click to download
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td data-label="first-name">Physics</td>
-								<td data-label="last-name">Gravitation</td>
-								<td data-label="email">
-									{" "}
-									<a
-										href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-										download
-									>
-										Click to download
-									</a>
-								</td>
-							</tr>
+						{
+							this.state.notes.map(note => {
+								return <Note note={note} />;
+							  })
+						}
 						</tbody>
 					</table>
 				</div>
@@ -70,3 +56,34 @@ class Notes extends React.Component {
 }
 
 export default Notes;
+
+
+
+class Note extends React.Component{
+
+	constructor(props){
+		super(props);
+
+		this.state = {
+			subject: props.note.subject,
+			topic: props.note.topic,
+			link : props.note.link
+		}
+	}
+
+	render(){
+		return <tr>
+		<td data-label="first-name">{this.state.subject}</td>
+		<td data-label="last-name">{this.state.topic}</td>
+		<td data-label="email">
+			{" "}
+			<a
+				href={this.state.link}
+				download
+			>
+				Click to download
+			</a>
+		</td>
+	</tr>
+	}
+}

@@ -2,7 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../style/styles.css";
 import USER from "./UserLogin";
+import "./GlobalVariable";
 const Navbar = (props) => {
+
+	console.log(window.user == undefined);
 	return (
 		<nav class="navbar  bg-light navbar-expand-lg fixed-top">
 			<a href="#" class="navbar-brand">
@@ -15,7 +18,7 @@ const Navbar = (props) => {
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div>{ USER.email}</div>
+
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="navbar-item">

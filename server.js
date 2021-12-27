@@ -16,6 +16,7 @@ app.use(express.json());
 
 const usersRouter = require('./routes/users');
 const loginRouter = require('./routes/login');
+const notesRouter = require('./routes/notes');
 
 
 const bodyParser = require("body-parser");
@@ -30,6 +31,7 @@ mongoose
 
         app.use('/users', usersRouter);
         app.use('/login', loginRouter);
+        app.use('/notes', notesRouter);
 
 
         app.listen(port, ()=>{

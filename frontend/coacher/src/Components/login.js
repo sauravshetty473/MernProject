@@ -5,6 +5,7 @@ import "../style/login.css";
 import $ from 'jquery';
 import USER from "./UserLogin";
 import axios from 'axios';
+import "./GlobalVariable";
 
 class Login extends React.Component {
 
@@ -50,6 +51,9 @@ class Login extends React.Component {
         .then(response => {
           if (response.data.length > 0) {
 
+            localStorage.username = this.state.username
+            localStorage.email = response.data[0].email
+            console.log(window.$user)
             window.location = '/';
           }
         })
