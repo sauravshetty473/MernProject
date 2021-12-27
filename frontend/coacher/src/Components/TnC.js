@@ -12,9 +12,10 @@ class TnC extends React.Component {
                 <div className="tnc">
                 <article id="post-44364" className="post-44364 page type-page status-publish hentry">
 	                <header className="entry-header">
-		                <h1 className="entry-title" style={{margin:"auto"}}>Terms &amp; Conditions</h1>	</header>
+		                <h1 className="entry-title">Terms &amp; Conditions</h1>	
+                    </header>
 
-	
+
                     <div className="entry-content">
                         <h3><span style={{fontWeight:"400"}}>Limitation of Liability</span></h3>
                         <p><span style={{fontWeight:"400"}}>The bootstrap themes shall not be held accountable for any direct, indirect, special, accidental or considerable damages that includes but not bound to, loss of data or profit caused due to use or inability to use the products that we provide under any circumstances, even if the bootstrap themes or legit representative has been considered the possibility of such damages. You are soley held responsible of any costs caused, if your use of materials from this site results in the need for servicing, repair or correction of equipment or data.</span></p>
