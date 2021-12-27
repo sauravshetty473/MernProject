@@ -3,12 +3,69 @@ import { Link } from "react-router-dom";
 import "../style/styles.css";
 import "../style/login.css";
 import $ from 'jquery';
+import USER from "./UserLogin";
+import axios from 'axios';
 
 class Login extends React.Component {
+
+    constructor(props) {
+        super(props);
+    
+        this.onChangeUsername = this.onChangeUsername.bind(this);
+        this.onChangePassword = this.onChangePassword.bind(this);
+
+        this.onSubmit = this.onSubmit.bind(this);
+    
+        this.state = {
+          username: '',
+          password: '',
+        }
+      }
+
+
+
+      onChangeUsername(e) {
+        this.setState({
+          username: e.target.value
+        })
+        console.log(e.target.value)
+      }
+    
+      onChangePassword(e) {
+        this.setState({
+          password: e.target.value
+        })
+      }
+
+
+      onSubmit(e) {
+
+        const user = {
+            username: this.state.username,
+            password: this.state.password,
+          }
+    
+    
+        axios.post('http://localhost:5000/users/', user)
+        .then(response => {
+          if (response.data.length > 0) {
+
+            window.location = '/';
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+  
+      }
+
+
+
+
     render () {
         return(
             <div className ="Login">
-                <form action=" " method="post" >
+               <form onSubmit={this.onSubmit}>
                 <h2>Login</h2>
                     <br />
                     <hr/>
@@ -19,7 +76,7 @@ class Login extends React.Component {
                                     <span className="fa fa-user"></span>
                                 </span>
                             </div>
-                            <input type="text" className="form-control" name="username" placeholder="Username" required="required" />
+                            <input type="text" className="form-control" name="username" placeholder="Username" required="required"  onChange={this.onChangeUsername} />
                         </div>
                     </div>
                     <div className="form-group">
@@ -29,13 +86,13 @@ class Login extends React.Component {
                                     <i className="fa fa-lock"></i>
                                 </span>                    
                             </div>
-                            <input type="password" className="form-control" name="password" placeholder="Password" required="required" />
+                            <input type="password" className="form-control" name="password" placeholder="Password" required="required"  onChange={this.onChangePassword}/>
                         </div>
                     </div>
                     <br />
                     <div className="form-group text-center">
-                        <button type="submit" className="btn btn-primary btn-lg" id="myButton">Login</button>
-                    </div><br />
+            <input type="submit" value="LOGIN" className="btn btn-primary" />
+          </div><br />
                     <div className="text-center" style={{ marginBottom: "10px", color:"purple" }}>Don't have an account? <Link to="/register" style= {{ textDecoration:"none" }}>Register here</Link></div>
                 </form >
             </div >

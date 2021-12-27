@@ -15,6 +15,11 @@ app.use(express.json());
 
 
 const usersRouter = require('./routes/users');
+const loginRouter = require('./routes/login');
+
+
+const bodyParser = require("body-parser");
+usersRouter.use(bodyParser);
 
 
 const uri = process.env.ATLAS_URI;
@@ -24,9 +29,7 @@ mongoose
 
 
         app.use('/users', usersRouter);
-
-
-
+        app.use('/login', loginRouter);
 
 
         app.listen(port, ()=>{
