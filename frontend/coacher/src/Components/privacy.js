@@ -4,7 +4,7 @@ import Navbar from "./navbar";
 import "../style/styles.css"
 import "../style/TnC.css";
 
-class TnC extends React.Component {
+class Privacy extends React.Component {
     render() {
         return (
             <div>
@@ -12,7 +12,7 @@ class TnC extends React.Component {
                 <div className="tnc">
                 <article id="post-44364" className="post-44364 page type-page status-publish hentry">
 	                <header className="entry-header">
-		                <h1 className="entry-title" style={{margin:"auto"}}>Terms &amp; Conditions</h1>	</header>
+		                <h1 className="entry-title">Privacy Policy</h1>	</header>
 
 	
                     <div className="entry-content">
@@ -57,4 +57,4 @@ class TnC extends React.Component {
     }
 }
 
-export default TnC;
+export default Privacy;

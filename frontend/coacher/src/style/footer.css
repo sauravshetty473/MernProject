@@ -29,7 +29,7 @@
 	font-size: 12px;
 	line-height: 17px;
 	padding: 20px 0px 5px 0px;
-	color: rgba(255, 255, 255, 0.2);
+	color: rgba(255, 255, 255, 0.397);
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 0.25em;
@@ -50,12 +50,29 @@
 	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
 }
+.footer .col ul li link{
+	color: #999999;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	cursor: pointer;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+}
 .social ul li {
 	display: inline-block;
 	padding-right: 5px !important;
 }
 
 .footer .col ul li:hover {
+	color: #ffffff;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+}
+.footer .col ul Link:hover {
 	color: #ffffff;
 	transition: 0.1s;
 	-webkit-transition: 0.1s;

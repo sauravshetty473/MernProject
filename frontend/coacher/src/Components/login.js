@@ -36,7 +36,7 @@ class Login extends React.Component {
                     <div className="form-group text-center">
                         <button type="submit" className="btn btn-primary btn-lg" id="myButton">Login</button>
                     </div><br />
-                    <div className="text-center" style={{ marginBottom: "10px", color:"purple" }}>Don't have an account? <Link to="/login" style= {{ textDecoration:"none" }}>Register here</Link></div>
+                    <div className="text-center" style={{ marginBottom: "10px", color:"purple" }}>Don't have an account? <Link to="/register" style= {{ textDecoration:"none" }}>Register here</Link></div>
                 </form >
             </div >
         )

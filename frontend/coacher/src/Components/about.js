@@ -32,7 +32,7 @@ class About extends React.Component {
                                 </div>
                                 <div className="card-box">
                                     <h4 className="card-title py-3 mbr-fonts-style display-5">
-                                        Creativity</h4>
+                                        Vision & Mission</h4>
                                     <p className="mbr-text mbr-fonts-style display-7">
                                         It's the ability to think outside the box. We make decisions, create something new and generate a lot of ideas.
                                     </p>
@@ -45,7 +45,7 @@ class About extends React.Component {
                                 </div>
                                 <div className="card-box">
                                     <h4 className="card-title py-3 mbr-fonts-style display-5">
-                                        Worldwide</h4>
+                                        What we Do?</h4>
                                     <p className="mbr-text mbr-fonts-style display-7">
                                         All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site.
                                     </p>
@@ -58,7 +58,50 @@ class About extends React.Component {
                                 </div>
                                 <div className="card-box">
                                     <h4 className="card-title py-3 mbr-fonts-style display-5">
-                                        Unique Styles
+                                        Careers
+                                    </h4>
+                                    <p className="mbr-text mbr-fonts-style display-7">
+                                        Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div className="media-container-row">
+
+                            <div className="card p-3 col-12 col-md-6 col-lg-4">
+                                <div className="card-img pb-3">
+                                    <span className="mbr-iconfont mbri-users" style={{color:"rgb(0,0,0)"}} media-simple="true"></span>
+                                </div>
+                                <div className="card-box">
+                                    <h4 className="card-title py-3 mbr-fonts-style display-5">
+                                        Why us?</h4>
+                                    <p className="mbr-text mbr-fonts-style display-7">
+                                        It's the ability to think outside the box. We make decisions, create something new and generate a lot of ideas.
+                                    </p>
+                                </div>
+                            </div> 
+
+                            <div className="card p-3 col-12 col-md-6 col-lg-4">
+                                <div className="card-img pb-3">
+                                    <span className="mbr-iconfont mbri-globe" style={{color:"rgb(0,0,0)"}} media-simple="true"></span>
+                                </div>
+                                <div className="card-box">
+                                    <h4 className="card-title py-3 mbr-fonts-style display-5">
+                                        How Students Benefit?</h4>
+                                    <p className="mbr-text mbr-fonts-style display-7">
+                                        All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="card p-3 col-12 col-md-6 col-lg-4">
+                                <div className="card-img pb-3">
+                                    <span className="mbr-iconfont mbri-smile-face" style={{color:"rgb(0,0,0)"}} media-simple="true"></span>
+                                </div>
+                                <div className="card-box">
+                                    <h4 className="card-title py-3 mbr-fonts-style display-5">
+                                    How Faculties Benefit?
                                     </h4>
                                     <p className="mbr-text mbr-fonts-style display-7">
                                         Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.

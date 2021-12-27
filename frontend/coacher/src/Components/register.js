@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../style/styles.css";
 import "../style/register.css";
-import $ from 'jquery';
+// import $ from 'jquery';
 
 class Register extends React.Component{
     render (){
@@ -86,11 +86,11 @@ class Register extends React.Component{
                     </div>
                     <div className="form-group text-center">
                         <button type="submit" className="btn btn-primary btn-lg" id="myButton" disabled>Register</button>
-                        <script type="text/javascript">
+                        {/* <script type="text/javascript">
                             $('#myCheckbox').click(function() {
                                 $('#myButton').attr("disabled", !this.checked)
                             });
-                        </script>
+                        </script> */}
                     </div><br />
                     <div className="text-center" style={{ marginBottom: "10px" }}>Already have an account?<Link to="/login" >Login here</Link></div>
                 </form >

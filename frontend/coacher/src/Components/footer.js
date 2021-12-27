@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../style/footer.css";
 
 export default class Footer extends Component {
@@ -12,30 +13,30 @@ export default class Footer extends Component {
 							<h1>Company</h1>
 							<ul>
 								<li>About</li>
-								<li>Mission</li>
-								<li>Services</li>
-								<li>Social</li>
-								<li>Get in touch</li>
+								<li>Careers</li>
+								<li>FAQ</li>
+								<li>Terms & Conditions</li>
+								<li>Privacy Policy</li>
 							</ul>
 						</div>
 						<div class="col">
 							<h1>Products</h1>
 							<ul>
 								<li>About</li>
-								<li>Mission</li>
-								<li>Services</li>
-								<li>Social</li>
-								<li>Get in touch</li>
+								<li>Careers</li>
+								<li>FAQ</li>
+								<li>Terms & Conditions</li>
+								<li>Privacy Policy</li>
 							</ul>
 						</div>
 						<div class="col">
 							<h1>Accounts</h1>
 							<ul>
 								<li>About</li>
-								<li>Mission</li>
-								<li>Services</li>
-								<li>Social</li>
-								<li>Get in touch</li>
+								<li><Link to="" className="link" style={{color:"white" }}>Careers</Link></li>
+								<li>FAQ</li>
+								<li>Terms & Conditions</li>
+								<li>Privacy Policy</li>
 							</ul>
 						</div>
 						<div class="col">

@@ -17,23 +17,23 @@ const Navbar = (props) => {
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="navbar-item">
-						<a href="#" class="nav-link">
+						<a href="/" class="nav-link">
 							Homepage
 						</a>
 					</li>
 					<li class="navbar-item">
-						<Link to="/contact" class="nav-link">
+						<Link to={"/contact"} class="nav-link">
 							Profile
 						</Link>
 					</li>
 					<li class="navbar-item">
-						<Link to="/feedback" class="nav-link">
+						<Link to={"/feedback"} class="nav-link">
 							Subjects
 						</Link>
 					</li>
 					<li class="navbar-item" className="highlight">
-						<Link to="/login" class="nav-link">
-							Logout
+						<Link to={"/login"} class="nav-link">
+							Login
 						</Link>
 					</li>
 				</ul>
