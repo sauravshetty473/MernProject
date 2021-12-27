@@ -27,13 +27,18 @@ const Navbar = (props) => {
 						</Link>
 					</li>
 					<li class="navbar-item">
-						<Link to={"/feedback"} class="nav-link">
+						<Link to={"/courses"} class="nav-link">
 							Subjects
+						</Link>
+					</li>
+					<li class="navbar-item">
+						<Link to={"/notes"} class="nav-link">
+							Notes
 						</Link>
 					</li>
 					<li class="navbar-item" className="highlight">
 						<Link to={"/login"} class="nav-link">
-							Login
+							Logout
 						</Link>
 					</li>
 				</ul>
