@@ -27,7 +27,7 @@ const Navbar = (props) => {
 						</a>
 					</li>
 					<li class="navbar-item">
-						<Link to={"/contact"} class="nav-link">
+						<Link to={"/profile"} class="nav-link">
 							Profile
 						</Link>
 					</li>

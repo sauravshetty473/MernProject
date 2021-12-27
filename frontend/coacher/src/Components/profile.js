@@ -13,8 +13,9 @@ class Profile extends React.Component {
             username: localStorage.username,
           }
           this.state = {user: [{
-              "first":'User',
-              "last" : 'last'
+              "first":'First name',
+              "last" : 'Last name',
+              "url" : 'https://bit.ly/32xFBfH' 
           }]};
         
     
@@ -22,8 +23,8 @@ class Profile extends React.Component {
         axios.post('http://localhost:5000/users/', user)
         .then(response => {
           if (response.data.length > 0) {
-         
             this.setState({ user: response.data })
+            console.log()
           }
 
           console.log(this.state.user[0].first)
@@ -42,7 +43,7 @@ class Profile extends React.Component {
                 <div className="profile-splitter row">
                     <div className="profile-sections col-sm-12 col-md-4 col-lg-4 col-xl-4 container-fluid bg-dark my-0" id = 'left-section'>
                         <div className="container w-75 ratio ratio-1x1 p-0 mt-5" style = {{overflow:"hidden", borderRadius:"50%"}}>
-                        <img className="rounded-circle" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Chania" style={{objectFit:"cover"}}/>
+                        <img className="rounded-circle" src={this.state.user[0].imageURL} alt="Chania" style={{objectFit:"cover"}}/>
                         </div>
 
                         <h1 className="container text-center text-white">

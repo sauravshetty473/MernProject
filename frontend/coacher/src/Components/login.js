@@ -44,11 +44,13 @@ class Login extends React.Component {
             password: this.state.password,
           }
     
+        alert(user.username);
     
         axios.post('http://localhost:5000/users/', user)
         .then(response => {
-          if (response.data.length > 0) {
+          alert(response.data.length);
 
+          if (response.data.length > 0) {
             localStorage.username = this.state.username
             localStorage.email = response.data[0].email
             console.log(window.$user)
@@ -56,9 +58,10 @@ class Login extends React.Component {
           }
         })
         .catch((error) => {
+          alert("error")
           console.log(error);
         })
-  
+
       }
 
 

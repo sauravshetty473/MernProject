@@ -46,6 +46,13 @@ const userSchema = new Schema({
         trim : true,
         minlength : 3
     },
+
+
+    imageURL : {
+        type : String,
+        required : true,
+        trim : true,
+    },
 },
 {
     timestamps : true,

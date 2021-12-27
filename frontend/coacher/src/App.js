@@ -32,12 +32,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Navbar />} />
-				{/* <Route path="/" element={<Footer />} /> */}
-
 				<Route path="/" element={<Homepage />} />
-		{/* <Route path="/" element={<HomeCards />} />
-				<Route path="/" element={<Test />} /> */}
 				<Route path="quizapp" element={<QuizApp />} />
 				<Route path="question" element={<Question />} />
 				<Route path="notes" element={<Notes />} />
