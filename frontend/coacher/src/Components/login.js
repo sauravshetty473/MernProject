@@ -37,7 +37,16 @@ class Login extends React.Component {
       }
 
 
-      onSubmit(e) {
+       async onSubmit (e) {
+
+
+        let axiosConfig = {
+          headers: {
+              'Content-Type': 'application/json;charset=UTF-8',
+              "Access-Control-Allow-Origin": "*",
+          }
+        };
+
 
         const user = {
             username: this.state.username,
@@ -46,7 +55,7 @@ class Login extends React.Component {
     
         alert(user.username);
     
-        axios.post('http://localhost:5000/users/', user)
+        const request = await axios.post('http://localhost:5000/users/', user, axiosConfig)
         .then(response => {
           alert(response.data.length);
 
