@@ -420,6 +420,11 @@ label.radio input {
 .container .page-wrapper .box .box-item:hover {
 	box-shadow: -2px 8px 22px 0 rgba(0, 0, 0, 0.15);
 }
+.profileimg {
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
 .container .page-wrapper .box .box-item:hover:before {
 	background: #00aeef;
 	width: 100%;
