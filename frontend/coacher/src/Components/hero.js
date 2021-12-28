@@ -24,15 +24,13 @@ class Header extends Component {
 										instruction.
 									</h4>
 									<div>
-										<Link to="/leaderboard">
+										<Link to="/subjectquiz">
 											<button class="btn btn-primary" className="btns">
-												My profile
+												Mock Tests
 											</button>
 										</Link>
-										&nbsp;
-										&nbsp;
-										&nbsp;
-									    {/* <div style={{marginLeft : }}></div> */}
+										&nbsp; &nbsp; &nbsp;
+										{/* <div style={{marginLeft : }}></div> */}
 										<button class="btn btn-primary" className="btns">
 											Assignments
 										</button>

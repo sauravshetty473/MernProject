@@ -3,6 +3,8 @@ import QuizApp from "./quiz-App";
 import "../style/styles.css";
 import { formatTime } from "../utils";
 
+import { Link } from "react-router-dom";
+
 const End = ({ results, data, onReset, onAnswersCheck, time }) => {
 	const [correctAnswers, setCorrectAnswers] = useState(0);
 
@@ -31,12 +33,11 @@ const End = ({ results, data, onReset, onAnswersCheck, time }) => {
 					<p>
 						<strong>Your time:</strong> {formatTime(time)}
 					</p>
-					<button className="button is-info mr-2" onClick={onAnswersCheck}>
-						Check your answers
-					</button>
-					<button className="button is-success" onClick={onReset}>
-						Try again
-					</button>
+					<Link to="/home">
+						<button className="button is-success" onClick={onReset}>
+							Back to home
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>
