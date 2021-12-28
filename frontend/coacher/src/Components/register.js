@@ -88,7 +88,7 @@ class Register extends React.Component {
 	}
 
 	onSubmit(e) {
-		console.log("hello");
+	
 		e.preventDefault();
 
 		const user = {
@@ -104,6 +104,7 @@ class Register extends React.Component {
 		console.log(user);
 
 		axios.post("http://localhost:5000/users/add", user).then((res) => {
+      console.log(res.status)
 			if (Math.floor(res.status / 100) == 2) {
 				console.log("success");
 
@@ -112,7 +113,12 @@ class Register extends React.Component {
 
 				window.location = "/";
 			}
-		});
+      else{
+        alert("Username or email address already taken");
+      }
+		}).catch((e)=>{
+      alert("Username or email address already taken");
+    });
 	}
 
 	render() {
@@ -266,18 +272,7 @@ class Register extends React.Component {
 						</div>
 					</div>
 
-					<div className="form-group">
-						<select
-							id="select"
-							className="form-control"
-							aria-placeholder="Type of User"
-							required="required"
-							onSelect={this.onChangeType}
-						>
-							<option>Student</option>
-							<option>Faculty</option>
-						</select>
-					</div>
+
 					<br />
 					<div className="form-group text-center">
 						<label className="form-check-label" />
