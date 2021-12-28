@@ -27,27 +27,29 @@ import All_Tests from "./Components/all_tests";
 
 import Homepage from "./Components/Homepage";
 import Subjects from "./Components/Subjects";
+import SubjectQuiz from "./Components/subjextquiz";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Homepage />} />
+				<Route path="/" element={<Login />} />
 				<Route path="quizapp" element={<QuizApp />} />
 				<Route path="question" element={<Question />} />
 				<Route path="notes" element={<Notes />} />
 				<Route path="assignment" element={<Assignment />} />
 				<Route path="tnc" element={<TnC />} />
 				<Route path="courses" element={<Subjects />} />
-				<Route path="register" element={<Register />} />
+				<Route path="home" element={<Homepage />} />
 				<Route path="faq" element={<Faq />} />
-				<Route path="login" element={<Login />} />
+				<Route path="subjectquiz" element={<SubjectQuiz />} />
+				<Route path="register" element={<Register />} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="about" element={<About />} />
-				<Route path="privacy" element={<Privacy/>} />
-				<Route path="profile" element={<Profile/>} />
-				<Route path="profile1" element={<Teacher_Profile/>} />
-				<Route path="tests" element={<All_Tests/>} />
+				<Route path="privacy" element={<Privacy />} />
+				<Route path="profile" element={<Profile />} />
+				<Route path="profile1" element={<Teacher_Profile />} />
+				<Route path="tests" element={<All_Tests />} />
 			</Routes>
 		</BrowserRouter>
 	);
