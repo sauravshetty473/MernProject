@@ -28,6 +28,7 @@ import All_Tests from "./Components/all_tests";
 import Homepage from "./Components/Homepage";
 import Subjects from "./Components/Subjects";
 import SubjectQuiz from "./Components/subjextquiz";
+import AssignmentCard from "./Components/assignmentcard";
 
 function App() {
 	return (
@@ -41,6 +42,7 @@ function App() {
 				<Route path="tnc" element={<TnC />} />
 				<Route path="courses" element={<Subjects />} />
 				<Route path="home" element={<Homepage />} />
+				<Route path="assignmentcard" element={<AssignmentCard />} />
 				<Route path="faq" element={<Faq />} />
 				<Route path="subjectquiz" element={<SubjectQuiz />} />
 				<Route path="register" element={<Register />} />

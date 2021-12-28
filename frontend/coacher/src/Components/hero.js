@@ -31,9 +31,11 @@ class Header extends Component {
 										</Link>
 										&nbsp; &nbsp; &nbsp;
 										{/* <div style={{marginLeft : }}></div> */}
-										<button class="btn btn-primary" className="btns">
-											Assignments
-										</button>
+										<Link to="/assignmentcard">
+											<button class="btn btn-primary" className="btns">
+												Assignments
+											</button>
+										</Link>
 									</div>
 								</div>
 							</div>

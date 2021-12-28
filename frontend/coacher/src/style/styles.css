@@ -424,6 +424,8 @@ label.radio input {
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;
+	height: 150px;
+	width: 150px;
 }
 .container .page-wrapper .box .box-item:hover:before {
 	background: #00aeef;
