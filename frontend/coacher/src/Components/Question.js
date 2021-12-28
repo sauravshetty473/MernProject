@@ -63,7 +63,8 @@ const Question = ({
 					</div>
 					{error && <div className="has-text-danger">{error}</div>}
 					<button
-						className="button is-link is-medium is-fullwidth mt-4"
+						className="button btn "
+						style={{ backgroundColor: "#004964" }}
 						onClick={nextClickHandler}
 					>
 						Next

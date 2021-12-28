@@ -4,7 +4,6 @@ import "../style/styles.css";
 import USER from "./UserLogin";
 import "./GlobalVariable";
 const Navbar = (props) => {
-
 	console.log(window.user == undefined);
 	return (
 		<nav class="navbar  bg-light navbar-expand-lg fixed-top">
@@ -22,7 +21,7 @@ const Navbar = (props) => {
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="navbar-item">
-						<a href="/" class="nav-link">
+						<a href="/home" class="nav-link">
 							Homepage
 						</a>
 					</li>
@@ -42,7 +41,7 @@ const Navbar = (props) => {
 						</Link>
 					</li>
 					<li class="navbar-item" className="highlight">
-						<Link to={"/login"} class="nav-link">
+						<Link to={"/"} class="nav-link">
 							Logout
 						</Link>
 					</li>

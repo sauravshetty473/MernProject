@@ -6,6 +6,7 @@ import End from "./End";
 import Modal from "./Modal";
 import quizData from "../data/quiz.json";
 
+import { Link } from "react-router-dom";
 let interval;
 
 const QuizApp = () => {
@@ -39,7 +40,29 @@ const QuizApp = () => {
 	};
 
 	return (
-		<div className="App">
+		<div className="QuizApp" style={{ marginTop: 120, padding: 20 }}>
+			<nav class="navbar  bg-light navbar-expand-lg fixed-top">
+				<a href="#" class="navbar-brand">
+					Coacher
+				</a>
+				<button
+					class="navbar-toggler"
+					data-toggle="collapse"
+					data-target="#navbarCollapse"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="navbar-item" className="highlight">
+							<Link to={"/home"} class="nav-link">
+								End
+							</Link>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			{step === 1 && <Start onQuizStart={quizStartHandler} />}
 			{step === 2 && (
 				<Question
