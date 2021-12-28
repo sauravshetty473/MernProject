@@ -98,7 +98,6 @@ class Register extends React.Component{
 
 
       onSubmit(e) {
-        console.log("hello");
         e.preventDefault();
     
         const user = {
@@ -110,9 +109,7 @@ class Register extends React.Component{
           type: this.state.type,
           imageURL: this.state.image
         }
-    
-        console.log(user);
-    
+
         axios.post('http://localhost:5000/users/add', user)
         .then((res)=>{
             if(Math.floor(res.status/100) == 2){

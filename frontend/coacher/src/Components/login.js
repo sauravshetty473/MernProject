@@ -38,6 +38,7 @@ class Login extends React.Component {
 
 
        async onSubmit (e) {
+        e.preventDefault();
 
 
         let axiosConfig = {
@@ -57,13 +58,14 @@ class Login extends React.Component {
     
         const request = await axios.post('http://localhost:5000/users/', user, axiosConfig)
         .then(response => {
-          alert(response.data.length);
-
           if (response.data.length > 0) {
             localStorage.username = this.state.username
             localStorage.email = response.data[0].email
             console.log(window.$user)
             window.location = '/';
+          }
+          else{
+            alert("Invalid Credentials");
           }
         })
         .catch((error) => {
