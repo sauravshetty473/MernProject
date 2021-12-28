@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../style/styles.css";
 
+import { Link } from "react-router-dom";
 const HomeCards = (props) => {
 	return (
 		<div class="container">
@@ -15,7 +16,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a className="btn">Details</a>
+							<Link to="/nonedue">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -26,7 +29,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -37,7 +42,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -48,7 +55,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -59,7 +68,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -70,7 +81,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -81,7 +94,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 					<li class="box-item">
@@ -92,7 +107,9 @@ const HomeCards = (props) => {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
 								cum ea esse id, ipsa minima nulla unde.
 							</p>
-							<a class="btn">Details</a>
+							<Link to="/details">
+								<a className="btn">Details</a>
+							</Link>
 						</div>
 					</li>
 				</ul>

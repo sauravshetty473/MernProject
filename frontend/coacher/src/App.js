@@ -29,12 +29,15 @@ import Homepage from "./Components/Homepage";
 import Subjects from "./Components/Subjects";
 import SubjectQuiz from "./Components/subjextquiz";
 import AssignmentCard from "./Components/assignmentcard";
+import Details from "./Components/details";
+import Nonedue from "./Components/nonedue";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Login />} />
+				<Route path="/nonedue" element={<Nonedue />} />
 				<Route path="quizapp" element={<QuizApp />} />
 				<Route path="question" element={<Question />} />
 				<Route path="notes" element={<Notes />} />
@@ -42,6 +45,7 @@ function App() {
 				<Route path="tnc" element={<TnC />} />
 				<Route path="courses" element={<Subjects />} />
 				<Route path="home" element={<Homepage />} />
+				<Route path="details" element={<Details />} />
 				<Route path="assignmentcard" element={<AssignmentCard />} />
 				<Route path="faq" element={<Faq />} />
 				<Route path="subjectquiz" element={<SubjectQuiz />} />

@@ -17,7 +17,7 @@ export default class AssignmentCard extends Component {
 								<span class="category">CET PREP</span>
 								<h6 class="header">Inorganic Chemistry</h6>
 
-								<Link to="/assignment">
+								<Link to="/nonedue">
 									<a className="btn">Submit</a>
 								</Link>
 							</div>
